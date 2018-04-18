@@ -69,3 +69,10 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Load Mobility Equipment Custom Post Type.
+*/ 
+require get_template_directory() . '/CPT_mobilityequipment.php';
+
+
