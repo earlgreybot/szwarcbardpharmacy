@@ -72,7 +72,10 @@ require get_template_directory() . '/inc/editor.php';
 
 /**
  * Load Mobility Equipment Custom Post Type.
-*/ 
+ */ 
 require get_template_directory() . '/CPT_mobilityequipment.php';
 
-
+/**
+ * Load the file that changes the dashboard references from posts to announcements
+ */   
+require get_template_directory() . '/announcementsnotposts.php';
