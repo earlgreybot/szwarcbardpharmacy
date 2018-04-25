@@ -1,6 +1,6 @@
 <?php
 // Register Custom Post Type for all of the mobility equipment
-function mobilityaidCPT() {
+function mobilityaid() {
 
 	$labels = array(
 		'name'                  => _x( 'Mobility Aid', 'Post Type General Name', 'text_domain' ),
@@ -54,5 +54,5 @@ function mobilityaidCPT() {
 	register_post_type( 'mobilityaid', $args );
 
 }
-add_action( 'init', 'mobilityaidCPT', 0 );
+add_action( 'init', 'mobilityaid', 0 );
 ?>
