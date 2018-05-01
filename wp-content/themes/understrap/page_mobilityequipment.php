@@ -34,16 +34,24 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					while( $mobilityaid->have_posts() ) : $mobilityaid->the_post(); ?>
 						<article class="mobilityaidpost">
 							<h2><?php the_title(); ?></h2>
-							<?php the_field('first_purchase_type'); ?>
-							<?php the_field('first_cost'); ?>
-							<?php the_field('second_purchase_type'); ?>
-							<?php the_field('second_cost'); ?>
+							<p> 
+								<span class='purchasetype'> <?php the_field('first_purchase_type');?> </span>
+								<span class='cost'> $<?php the_field('first_cost'); ?> </span> 
+							</p>
+							
+							<p> 
+								<span class='purchasetype'> <?php the_field('second_purchase_type'); ?> </span>
+								<span class='cost'> $<?php the_field('second_cost'); ?> </span>
+							</p>
 							<?php the_content(); ?>
-							<?php the_field('in_stock'); ?>
+							<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
+							<?php if (get_field ('deposit_required') ) : ?>
+								<p>A deposit of <?php echo the_field ('deposit'); ?> is required to rent this item</p>
+							<?php endif; ?>
 						</article>
 					<?php endwhile; ?>
 				<?php else: ?>
-					<p> Sorry, we cant find any mobility equipment to list, please call us </p>
+					<p> Sorry, we cant find any mobility equipment to list, please <a href='https://szwarcbardpharmacy.com.au/wp/contact-us/'>contact us</a> </p>
 				<?php endif; ?>
 		</main>
 
