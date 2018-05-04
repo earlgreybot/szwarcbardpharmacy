@@ -36,17 +36,23 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							<h2><?php the_title(); ?></h2>
 							<p> 
 								<span class='purchasetype'> <?php the_field('first_purchase_type');?> </span>
-								<span class='cost'> $<?php the_field('first_cost'); ?> </span> 
+								<?php if (get_field ('first_cost') ) : ?>
+								<span>$<?php echo the_field ('first_cost'); ?></span>
+								<?php endif; ?>
 							</p>
-							
 							<p> 
 								<span class='purchasetype'> <?php the_field('second_purchase_type'); ?> </span>
-								<span class='cost'> $<?php the_field('second_cost'); ?> </span>
+								<?php if (get_field ('second_cost') ) : ?>
+								<span>$<?php echo the_field ('second_cost'); ?></span>
+								<?php endif; ?>
 							</p>
+							<img> 
+								<?php the_post_thumbnail(); ?> 
+							</img>
 							<?php the_content(); ?>
 							<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
 							<?php if (get_field ('deposit_required') ) : ?>
-								<p>A deposit of <?php echo the_field ('deposit'); ?> is required to rent this item</p>
+								<p>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
 							<?php endif; ?>
 						</article>
 					<?php endwhile; ?>
