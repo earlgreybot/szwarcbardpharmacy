@@ -120,8 +120,13 @@ add_action( 'widgets_init', 'szwarcbardpharmacy_widgets_init' );
  * Enqueue scripts and styles.
  */
 function szwarcbardpharmacy_scripts() {
+	/**
+	* Load Bootstrap
+	**/
+	wp_enqueue_style ( 'bootstrap.css', get_template_directory_uri() . '/bootstrap.css' ); 
+	
 	wp_enqueue_style( 'szwarcbardpharmacy-style', get_stylesheet_uri() );
-
+	
 	wp_enqueue_script( 'szwarcbardpharmacy-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'szwarcbardpharmacy-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -163,3 +168,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Load the file that changes the dashboard references from posts to announcements
  */   
 require get_template_directory() . '/announcementsnotposts.php';
+
+/**
+ * Load the mobility aids CPT
+**/
+require get_template_directory() . '/mobilityaids/CPT_mobilityequipment.php';
+ 
+ 
