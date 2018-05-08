@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header container">
 		<div class="site-branding">
 			<div class='row'>
-				<div class="site-title col-s-9 col-xs-6">
+				<div class="site-title col-md-6 col-xs-12">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<div>
 							<h1 class='mainheading'>Geoff and Sue</h1> 
@@ -36,7 +36,7 @@
 						</div>
 					</a>
 				</div>
-				<p class="col-xs-3"> this is a test </p>
+				<div class="logo col-xs-12 col-md-6"> <?php the_custom_logo(); ?> </div>
 				<?php
 			$szwarcbardpharmacy_description = get_bloginfo( 'description', 'display' );
 			if ( $szwarcbardpharmacy_description || is_customize_preview() ) :

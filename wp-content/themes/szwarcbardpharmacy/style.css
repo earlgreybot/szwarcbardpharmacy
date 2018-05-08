@@ -52,7 +52,6 @@ Pale Blue:    #94D2FF
 
 */
 
-
 /*--------------------------------------------------------------
 # Custom
 --------------------------------------------------------------*/
@@ -72,6 +71,14 @@ Pale Blue:    #94D2FF
 	font-size: 39pt;
 }
 
+.custom-logo {
+	min-width: 250px;
+	max-width: 250px;
+	height: auto;
+	margin-top: 30px;
+}
+
+
 /* Posts */
 .posted-on,
 .byline {
@@ -88,7 +95,7 @@ Pale Blue:    #94D2FF
 	
 /* Mobility Aids */
 .purchasetype,
-.avalible,
+.avaliable,
 .mobilitydeposit {
 	font-size: 2em;
 }
@@ -634,11 +641,6 @@ embed,
 iframe,
 object {
 	max-width: 100%;
-}
-
-/* Make sure logo link wraps around logo image. */
-.custom-logo-link {
-	display: inline-block;
 }
 
 /*--------------------------------------------------------------
