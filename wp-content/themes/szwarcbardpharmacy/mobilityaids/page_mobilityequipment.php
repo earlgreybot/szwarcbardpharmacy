@@ -33,26 +33,26 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				if ( $mobilityaid->have_posts() ):
 					while( $mobilityaid->have_posts() ) : $mobilityaid->the_post(); ?>
 						<article class="mobilityaidpost">
-							<h2><?php the_title(); ?></h2>
-							<p> 
-								<span class='purchasetype'> <?php the_field('first_purchase_type');?> </span>
+							<h2 class="mobility"><?php the_title(); ?></h2>
+							<p class='purchasetype'> 
+								<span> <?php the_field('first_purchase_type');?> </span>
 								<?php if (get_field ('first_cost') ) : ?>
 								<span>$<?php echo the_field ('first_cost'); ?></span>
 								<?php endif; ?>
 							</p>
-							<p> 
-								<span class='purchasetype'> <?php the_field('second_purchase_type'); ?> </span>
+							<p class='purchasetype'> 
+								<span> <?php the_field('second_purchase_type'); ?> </span>
 								<?php if (get_field ('second_cost') ) : ?>
 								<span>$<?php echo the_field ('second_cost'); ?></span>
 								<?php endif; ?>
 							</p>
-							<img> 
+							<img class="mobility"> 
 								<?php the_post_thumbnail(); ?> 
 							</img>
-							<?php the_content(); ?>
+							<p class="mobilitycontent"><?php the_content(); ?> </p>
 							<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
 							<?php if (get_field ('deposit_required') ) : ?>
-								<p>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
+								<p class=mobilitydeposit>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
 							<?php endif; ?>
 						</article>
 					<?php endwhile; ?>

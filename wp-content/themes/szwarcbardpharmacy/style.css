@@ -58,10 +58,18 @@ Pale Blue:    #94D2FF
 --------------------------------------------------------------*/
 
 /* Header */
-.custom-logo {
-	position: relative;
-	right: 100;
-	top: 0;
+.subheading {
+	color: #00539B;
+	font-family:'Nunito Sans', sans-serif;
+	font-size: 19pt;
+	margin:0;
+	margin-bottom: 20px;
+}
+
+.mainheading {
+	margin: 0;
+	margin-top: 30px;
+	font-size: 39pt;
 }
 
 /* Posts */
@@ -70,6 +78,20 @@ Pale Blue:    #94D2FF
 	color: #00539B;
 }
 
+.post-edit-link {
+	font-size: 1.5em;
+}
+
+.entry-title {
+	margin-top: 50px;
+}
+	
+/* Mobility Aids */
+.purchasetype,
+.avalible,
+.mobilitydeposit {
+	font-size: 2em;
+}
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -80,7 +102,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family:'Nunito Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -89,6 +111,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: #f89828;
+	font-family: 'quintus_TRIAL'; /*this is a temp measure until the font is properly installed'*/
 }
 
 p {
@@ -327,8 +350,8 @@ a:hover, a:active {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
 	font-size: 2.5em;
+	margin: auto;
 }
 
 .main-navigation ul {
@@ -368,12 +391,14 @@ a:hover, a:active {
 
 .main-navigation li {
 	float: left;
+	text-align: center;
 	position: relative;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
+	width: 220px;
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-color: #94D2FF;
-	margin-left: 2px;
+	margin: 2px;
 }
 
 
@@ -533,6 +558,9 @@ a:hover, a:active {
 .widget select {
 	max-width: 100%;
 }
+
+.widget li {
+	font-size: 1.5em;
 
 /*--------------------------------------------------------------
 # Content
