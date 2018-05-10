@@ -57,7 +57,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						</article>
 					<?php endwhile; ?>
 				<?php else: ?>
-					<p> Sorry, we cant find any mobility equipment to list, please <a href='https://szwarcbardpharmacy.com.au/wp/contact-us/'>contact us</a> </p>
+					<p> Sorry, we cant find any mobility equipment to list, please <a href='https://szwarcbardpharmacy.com.au/contact-us/'>contact us</a> </p>
 				<?php endif; ?>
 		</main>
 
