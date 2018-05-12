@@ -127,8 +127,8 @@ function szwarcbardpharmacy_scripts() {
 	
 	/**
 	* Load Quintus Font
-	**/
-	wp_enqueue_style ('quintus.css', get_template_directory_uri() . '/fonts/quintus.css' );
+	
+	wp_enqueue_style ('quintus.css', get_template_directory_uri() . '/fonts/quintus.css' ); **/
 	
 	wp_enqueue_style( 'szwarcbardpharmacy-style', get_stylesheet_uri() );
 	
