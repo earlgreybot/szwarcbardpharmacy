@@ -32,28 +32,32 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				//the loop that repeats it for each post and displays it on the page
 				if ( $mobilityaid->have_posts() ):
 					while( $mobilityaid->have_posts() ) : $mobilityaid->the_post(); ?>
-						<article class="mobilityaidpost">
-							<h2 class="mobility"><?php the_title(); ?></h2>
-							<p class='purchasetype'> 
-								<span> <?php the_field('first_purchase_type');?> </span>
-								<?php if (get_field ('first_cost') ) : ?>
-								<span>$<?php echo the_field ('first_cost'); ?></span>
-								<?php endif; ?>
-							</p>
-							<p class='purchasetype'> 
-								<span> <?php the_field('second_purchase_type'); ?> </span>
-								<?php if (get_field ('second_cost') ) : ?>
-								<span>$<?php echo the_field ('second_cost'); ?></span>
-								<?php endif; ?>
-							</p>
-							<img class="mobility"> 
-								<?php the_post_thumbnail(); ?> 
-							</img>
-							<p class="mobilitycontent"><?php the_content(); ?> </p>
-							<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
-							<?php if (get_field ('deposit_required') ) : ?>
-								<p class=mobilitydeposit>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
-							<?php endif; ?>
+						<article class="mobilityaidpost container">
+						<div class='row'>
+								<div class="col-lg-3">
+									<?php the_post_thumbnail(); ?> 
+								</div>
+								<div class="col-lg-9">
+									<h2 class="mobility"><?php the_title(); ?></h2>
+									<p class='purchasetype'> 
+										<span> <?php the_field('first_purchase_type');?> </span>
+											<?php if (get_field ('first_cost') ) : ?>
+										<span>$<?php echo the_field ('first_cost'); ?></span>
+											<?php endif; ?>
+									</p>
+									<p class='purchasetype'> 
+										<span> <?php the_field('second_purchase_type'); ?> </span>
+											<?php if (get_field ('second_cost') ) : ?>
+										<span>$<?php echo the_field ('second_cost'); ?></span>
+											<?php endif; ?>
+									</p>
+									<p class="mobilitycontent"><?php the_content(); ?> </p>
+									<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
+									<?php if (get_field ('deposit_required') ) : ?>
+										<p class=mobilitydeposit>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
+									<?php endif; ?>
+								</div>	
+							</div>
 						</article>
 					<?php endwhile; ?>
 				<?php else: ?>
