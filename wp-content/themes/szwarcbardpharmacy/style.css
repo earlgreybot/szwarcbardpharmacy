@@ -109,6 +109,20 @@ Pale Blue:    #94D2FF
 	font-size: 2em;
 }
 
+.mobilityaside {
+	background-color: #94D2FF;
+	padding: 20px;
+}
+
+.mobilitylist a {
+	padding: 10px;
+	font-size: 1.7em;
+	font: 'Nunito Sans', sans;
+	color: #00539B;
+}
+
+
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -264,13 +278,12 @@ input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
+	font-size: 1.5em !important;
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 4px;
 }
 
 button:hover,
@@ -308,8 +321,7 @@ input[type="color"],
 textarea {
 	color: #666;
 	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	font-size: 1.4em;
 }
 
 input[type="text"]:focus,
