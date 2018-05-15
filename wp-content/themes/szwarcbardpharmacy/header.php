@@ -26,9 +26,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'szwarcbardpharmacy' ); ?></a>
 
 	<header id="masthead" class="site-header container">
-		<div class="site-branding">
-			<div class='row'>
-				<div class="site-title col-md-6 col-xs-12">
+		<div class="site-branding row">
+				<div class="site-title col-md-8 col-xs-12">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<div>
 							<h1 class='mainheading'>Geoff and Sue</h1> 
@@ -36,14 +35,13 @@
 						</div>
 					</a>
 				</div>
-				<div class="logo col-xs-12 col-md-6"> <?php the_custom_logo(); ?> </div>
+				<div class="logo col-xs-12 col-md-4"> <?php the_custom_logo(); ?> </div>
 				<?php
 			$szwarcbardpharmacy_description = get_bloginfo( 'description', 'display' );
 			if ( $szwarcbardpharmacy_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $szwarcbardpharmacy_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-			</div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation"> 

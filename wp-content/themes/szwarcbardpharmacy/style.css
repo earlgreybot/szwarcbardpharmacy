@@ -50,6 +50,8 @@ Orange:       #f89828
 
 Pale Blue:    #94D2FF
 
+Paler Blue:   #f4faff
+
 */
 
 /*--------------------------------------------------------------
@@ -76,7 +78,6 @@ Pale Blue:    #94D2FF
 
 .mainheading {
 	margin: 0;
-	margin-top: 30px;
 	font-size: 39pt;
 }
 
@@ -84,9 +85,11 @@ Pale Blue:    #94D2FF
 	min-width: 250px;
 	max-width: 250px;
 	height: auto;
-	margin-top: 30px;
 }
 
+.site-branding {
+	margin-top: 30px;
+}
 
 /* Posts */
 .posted-on,
@@ -110,7 +113,7 @@ Pale Blue:    #94D2FF
 }
 
 .mobilityaside {
-	background-color: #94D2FF;
+	background-color: #f4faff;
 	padding: 20px;
 }
 
@@ -120,6 +123,8 @@ Pale Blue:    #94D2FF
 	font: 'Nunito Sans', sans;
 	color: #00539B;
 }
+
+/*widget*/
 
 
 
