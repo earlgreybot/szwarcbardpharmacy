@@ -48,6 +48,8 @@ Dark Blue:    #00539B
 
 Orange:       #f89828
 
+Cyan:         #00a8e5
+
 Pale Blue:    #94D2FF
 
 Paler Blue:   #f4faff
@@ -101,6 +103,12 @@ Paler Blue:   #f4faff
 	border: 3px solid #94D2FF !important;
 }
 
+@media only screen and (max-width: 494px) {
+    .site-header {
+        margin-left: 10%;
+    }
+}
+
 /* Posts */
 .posted-on,
 .byline {
@@ -120,6 +128,10 @@ Paler Blue:   #f4faff
 h2 > a {
 	color: #f89828;
 	font-size: ;
+}
+	
+.nav-links {
+	visibility: hidden;
 }
 	
 /* Mobility Aids */
@@ -144,6 +156,10 @@ h2 > a {
 .mobpost {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.search-form {
+	padding-bottom: 10px;
 }
 
 /* this styles the section at the bottom of the single page view for each mobility aid */
@@ -174,17 +190,34 @@ h2 > a {
 	padding: 20px;
 }
 
-.widget-area ul li { 
+.widget-area ul li{ 
 	display: inline;
 	padding-left: 0px;
 	padding-right: 20px;
 	margin: 0;
+	font-family: 'Nunito Sans', Sans;
+	font-size: 1.7em;
+	
+}
+
+
+.widget-area a, a:visited{
+	color: #00539B;
+}
+	
+.widget-area a:hover, a:active {
+	color: #00a8e5;
 }
 
 .widget-title {
 	margin: 0;
 	padding: 0;
 	display: inline;
+}
+
+.site-info {
+	font-size: 1.5em;
+	margin: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -422,15 +455,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #00539B;
+	color: #f89828;
 }
 
 a:visited {
-	color: black;
+	color: #00a8e5;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #00539B;
 }
 
 a:focus {
