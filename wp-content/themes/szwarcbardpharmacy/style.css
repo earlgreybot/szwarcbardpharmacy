@@ -141,6 +141,18 @@ h2 > a {
 	color: #00539B;
 }
 
+.mobpost {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* this styles the section at the bottom of the single page view for each mobility aid */
+#contactus {
+	background-color: #f4faff;
+	font-size: 2em;
+	padding: 10px;
+}
+
 /*Contact*/
 #address {
 	font-family: 'Nunito Sans', Sans;
@@ -159,7 +171,7 @@ h2 > a {
 
 .widget-area {
 	background-color: #f4faff;
-	padding: 5px;
+	padding: 20px;
 }
 
 .widget-area ul li { 
