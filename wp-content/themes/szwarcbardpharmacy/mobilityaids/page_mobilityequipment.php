@@ -22,7 +22,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			//sets up the parameters for the query that calls upon the CPT
 				$args = array(
 					'post_type' => 'mobilityaid',
-					'orderby' => 'menu_order',
+					'orderby' => 'title',
 					'order' => 'ASC'
 				);
 				// creates the query and saves the content as $mobilityaid

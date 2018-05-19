@@ -82,6 +82,10 @@ Paler Blue:   #f4faff
 	font-size: 39pt;
 }
 
+.site-title a {
+	text-decoration: none;
+}
+
 .custom-logo {
 	min-width: 250px;
 	max-width: 250px;
@@ -91,6 +95,10 @@ Paler Blue:   #f4faff
 
 .site-branding {
 	margin-top: 30px;
+}
+
+.current-menu-item {
+	border: 3px solid #94D2FF !important;
 }
 
 /* Posts */
@@ -472,13 +480,13 @@ a:hover, a:active {
 	text-align: center;
 	position: relative;
 	width: 220px;
-	padding: 10px;
+	padding: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: #f4faff;
 	margin: 2px;
+	border: 3px solid #f4faff;
 }
-
 
 .main-navigation a {
 	display: block;
@@ -490,7 +498,7 @@ a:hover, a:active {
 .main-navigation a:focus {
 	display: block;
 	text-decoration: none;
-	color: black;
+	color: #94D2FF;
 }
 
 /* Small menu. */
@@ -499,14 +507,10 @@ a:hover, a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
+
 	.main-navigation ul {
 		display: block;
 	}
-}
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
