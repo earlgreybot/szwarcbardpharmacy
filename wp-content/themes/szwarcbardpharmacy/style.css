@@ -149,7 +149,23 @@ h2 > a {
 
 /*widget*/
 
+.widget-area {
+	background-color: #f4faff;
+	padding: 5px;
+}
 
+.widget-area ul li { 
+	display: inline;
+	padding-left: 0px;
+	padding-right: 20px;
+	margin: 0;
+}
+
+.widget-title {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
 
 /*--------------------------------------------------------------
 # Typography
@@ -459,7 +475,7 @@ a:hover, a:active {
 	padding: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #94D2FF;
+	background-color: #f4faff;
 	margin: 2px;
 }
 
@@ -474,7 +490,7 @@ a:hover, a:active {
 .main-navigation a:focus {
 	display: block;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 /* Small menu. */
