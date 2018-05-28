@@ -23,7 +23,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				$args = array(
 					'post_type' => 'mobilityaid',
 					'orderby' => 'title',
-					'order' => 'ASC'
+					'order' => 'ASC',
+					'posts_per_page'=>'-1'
 				);
 				// creates the query and saves the content as $mobilityaid
 				$mobilityaid = new WP_Query($args);
@@ -40,45 +41,56 @@ $container   = get_theme_mod( 'understrap_container_type' );
 									</ul>
 								</div>
 							</aside>
+							<div class="container">
 					<?php
 						//the loop that repeats it for each post and displays it on the page
 						if ( $mobilityaid->have_posts() ):
 							while( $mobilityaid->have_posts() ) : $mobilityaid->the_post(); ?>
-								<div class="container">
-									<div class="row">	
-									<article class="mobpost">
-											<div class="col-lg-3">
+									<div class="row mobpost">
+									<article class="mob">
+											<div class="col-sm-12 col-lg-3">
 												<?php the_post_thumbnail(); ?> 
 											</div>
-											<div class="col-lg-9">
+											<div class="col-sm-12 col-lg-9">
 												<h2 class="mobility"><a href='<?php the_permalink(); ?>'><?php the_title(); ?></a></h2>
 												<p class='purchasetype'> 
-													<span> <?php the_field('first_purchase_type');?> </span>
+													<span> 
+														<?php the_field('first_purchase_type');?> 
+													</span> 	
+													<span>
 														<?php if (get_field ('first_cost') ) : ?>
-													<span>$<?php echo the_field ('first_cost'); ?></span>
+															$<?php echo the_field ('first_cost'); ?>
 														<?php endif; ?>
+													</span>		
 												</p>
 												<p class='purchasetype'> 
-													<span> <?php the_field('second_purchase_type'); ?> </span>
+													<span> 
+														<?php the_field('second_purchase_type'); ?> 
+													</span>											
+													<span>
 														<?php if (get_field ('second_cost') ) : ?>
-													<span>$<?php echo the_field ('second_cost'); ?></span>
+															$<?php echo the_field ('second_cost'); ?>
 														<?php endif; ?>
+													</span>		
 												</p>
-												<p class="mobilitycontent"><?php the_content(); ?> </p>
+												<div class="mobilitycontent"><?php the_content(); ?> </div>
 												<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
-												<?php if (get_field ('deposit_required') ) : ?>
-													<p class=mobilitydeposit>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
+												<p class=mobilitydeposit> 
+													<?php if (get_field ('deposit_required') ) : ?> 
+													A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item 
+													<?php endif; ?>
+												</p>
 											</div>
 									</article>
-						<?php endif; ?>
+									</div>
+						
 								<?php endwhile; ?>
 						<?php else: ?>
 								<p> Sorry, we cant find any mobility equipment to list, please <a href='https://szwarcbardpharmacy.com.au/contact-us/'>contact us</a> </p>
 						<?php endif; ?>
-							
-				</div>
-			</div>
+				</div>			
 		</main>
+	</div>
 
 <?php
 get_sidebar();

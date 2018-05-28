@@ -103,7 +103,7 @@ Paler Blue:   #f4faff
 	border: 3px solid #94D2FF !important;
 }
 
-@media only screen and (max-width: 494px) {
+@media only screen and (max-width: 494px;) {
     .site-header {
         margin-left: 10%;
     }
@@ -127,7 +127,6 @@ Paler Blue:   #f4faff
 
 h2 > a {
 	color: #f89828;
-	font-size: ;
 }
 	
 .nav-links {
@@ -149,14 +148,20 @@ h2 > a {
 .mobilitylist a {
 	padding: 10px;
 	font-size: 1.7em;
-	font: 'Nunito Sans', sans;
+	font-family: "Nunito Sans", sans;
 	color: #00539B;
 }
 
 .mobpost {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: auto;
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 260px;
 }
+
 
 .search-form {
 	padding-bottom: 10px;
@@ -218,7 +223,9 @@ h2 > a {
 .site-info {
 	font-size: 1.5em;
 	margin: 10px;
+	color: black;
 }
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -229,11 +236,11 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: white;
 	font-family:'Nunito Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -373,14 +380,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	background: #e6e6e6;
+	border: 2px solid #f89828;
+	background: white;
 	color: rgba(0, 0, 0, 0.8);
-	font-size: 1.5em !important;
-	font-size: 0.75rem;
+	font-size: 1.7em !important;
 	line-height: 1;
-	padding: 4px;
+	padding: 7px;
+	background-color: #fcecd9;
 }
 
 button:hover,
@@ -416,9 +422,11 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	font-size: 1.4em;
+	color: white;
+	border: 2px solid #94D2FF;
+	font-size: 1.7em;
+	padding-left: 7px;
+	font-family: "Nunito Sans", sans;
 }
 
 input[type="text"]:focus,
@@ -493,7 +501,6 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
@@ -688,6 +695,7 @@ a:hover, a:active {
 
 .widget li {
 	font-size: 1.5em;
+}
 
 /*--------------------------------------------------------------
 # Content

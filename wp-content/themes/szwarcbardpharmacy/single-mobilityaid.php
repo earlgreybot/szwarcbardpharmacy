@@ -36,20 +36,23 @@ get_header();
 													<span>$<?php echo the_field ('second_cost'); ?></span>
 														<?php endif; ?>
 												</p>
-												<p class="mobilitycontent"><?php the_content(); ?> </p>
-												<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
+												<div 
+													class="mobilitycontent"><?php the_content(); ?> 
+												</div>
+												<p class='avaliable'> Is this item available? <?php the_field('in_stock'); ?> </p>
 												<?php if (get_field ('deposit_required') ) : ?>
 													<p class=mobilitydeposit>A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item</p>
 												<p id=contactus> In order to rent or buy this item, <a href=https://szwarcbardpharmacy.com.au/contact-us/> visit us in store, email us or call us to discuss options </a></p>	
 											
 											</div>
 									</article>
+									</div>
 						<?php endif; ?>
 			
 		<?php	
 		endwhile; // End of the loop.
 		?>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
