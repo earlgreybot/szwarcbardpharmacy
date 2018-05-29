@@ -74,7 +74,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 													</span>		
 												</p>
 												<div class="mobilitycontent"><?php the_content(); ?> </div>
-												<p class='avaliable'> Is this item avalible? <?php the_field('in_stock'); ?> </p>
+												<p class='avaliable'> Is this item available? <?php the_field('in_stock'); ?> </p>
 												<p class=mobilitydeposit> 
 													<?php if (get_field ('deposit_required') ) : ?> 
 													A deposit of $<?php echo the_field ('deposit'); ?> is required to rent this item 
